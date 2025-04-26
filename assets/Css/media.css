@@ -1,0 +1,130 @@
+@media (min-width:320px) {
+    .col-xsm-1 {width: 8.33%;}
+    .col-xsm-2 {width: 16.66%;}
+    .col-xsm-3 {width: 25%;}
+    .col-xsm-4 {width: 33.33%;}
+    .col-xsm-5 {width: 41.66%;}
+    .col-xsm-6 {width: 50%;}
+    .col-xsm-7 {width: 58.33%;}
+    .col-xsm-8 {width: 66.66%;}
+    .col-xsm-9 {width: 75%;}
+    .col-xsm-10 {width: 83.33%;}
+    .col-xsm-11 {width: 91.66%;}
+    .col-xsm-12 {width: 100%;}
+    
+    *[class^="col-"] 
+        {
+            padding: 0px 12px;
+    }
+    
+}
+
+@media (min-width:576px) {
+    .hero{
+        padding-bottom: 600px !important;
+    }
+    .chart img{
+        top: 255px !important;
+    }
+    .hero-circle img {
+        top: 315px;
+        left: 55px;
+    }
+    .integration{
+        padding-bottom: 450px;
+    }
+    .support img{
+        top: 380px;
+        right: -15px;
+    }
+    .solution{
+        padding-bottom: 600px;
+    }
+    .acc h3{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:768px) {
+    .chart img{
+        top: 215px !important;
+    }
+    .hero-circle img {
+        top: 315px;
+        left: 115px;
+    }
+    .team img{
+        top: 25px;
+    }
+    .acc h3{
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width:992px) {
+    .chart img{
+        top: 255px !important;
+    }
+    .hero-circle img {
+        top: 270px;
+        left: -15px;
+    }
+    .hero{
+        padding-bottom: 100px !important;
+    }
+    .bg-hero-circle-box img {
+        top: 156px;
+        left: 140px;
+    }
+    .transaction img{
+        right: 0px;
+        top: -50px;
+    }
+    .team img{
+        left: -65px;
+    }
+    .support img{
+        top: 380px;
+        right: 0;
+    }
+    .integration{
+        padding-bottom: 100px;
+    }
+    .revenue img{
+        right: 0;
+        top: 50px;
+    }
+    .solution{
+        padding-bottom: 100px;
+    }
+}
+
+@media (min-width:1200px) {
+    .revenue img{
+        right: 0;
+        top: 0;
+    }
+    .hero-circle img {
+        top: 325px;
+        left: 55px;
+    }
+    .bg-hero-circle-box img{
+        top:  165px;
+        left: 200px;
+    }
+    .chart img{
+        top: 245px !important;
+    }
+    .transaction img{
+        right: -10px;
+        top: -50px;
+    }
+    .team img{
+        top: 82px;
+        left: 0;
+    }
+    .support img{
+        top: 365px;
+        right: 105px;
+    }
+}

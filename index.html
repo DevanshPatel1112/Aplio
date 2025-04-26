@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplio</title>
+
+    <!-- Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/Fonts/stylesheet.css">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <link rel="stylesheet" href="./assets/Css/media.css">
+</head>
+
+<body>
+    <header class="position-sticky">
+        <div class="container py-4 d-flex justify-content-between align-items-center">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/Images/aplio-logo-white.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="d-sm-none d-lg-flex">
+                <ul
+                    class="list-unstyled text-white d-flex gap-2 align-items-center justify-content-center py-2 rounded-5 px-3 mb-0">
+                    <li class="active rounded-5 py-2 px-4 parent-dropdown d-flex gap-2 align-items-center">
+                        <a href="./index.html" class="text-white">
+                            Home
+                        </a>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="dropdown d-flex flex-column gap-3">
+                            <li>Home 1</li>
+                            <li>Home 2</li>
+                            <li>Home 3</li>
+                            <li>Home 4</li>
+                            <li>Home 5</li>
+                            <li>Home 6</li>
+                            <li>Home 7</li>
+                            <li>Home 8</li>
+                        </ul>
+                    </li>
+                    <li class="hover py-2 px-4 border-0">About</li>
+                    <li class="hover py-2 px-4 border-0 parent-dropdown d-flex gap-2 align-items-center">
+                        <span>Services</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="dropdown d-flex flex-column gap-3">
+                            <li>Services</li>
+                            <li>Service Single</li>
+                        </ul>
+                    </li>
+                    <li class="hover py-2 px-4 border-0">Pages</li>
+                    <li class="hover py-2 px-4 border-0 parent-dropdown d-flex gap-2 align-items-center news">
+                        <span>News</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="dropdown d-flex flex-column gap-4 px-5">
+                            <li>Blog Grid</li>
+                            <li>Blog List</li>
+                            <li>Blog Categories</li>
+                            <li>Blog Tags</li>
+                            <li>Blog Details</li>
+                        </ul>
+                    </li>
+                    <li class="hover py-2 px-4 border-0">Contact Us</li>
+                </ul>
+            </nav>
+
+            <div class="header-right d-flex justify-content-center align-content-center gap-3">
+                <div class="search rounded-circle text-white d-flex justify-content-center align-items-center">
+                    <i class="ri-search-line"></i>
+                </div>
+                <button class="demo-btn text-white px-4 py-2 border-0 rounded-5 d-sm-none d-xl-flex">Request
+                    Demo</button>
+
+                <!-- OffCanvas -->
+                <button
+                    class="rounded-circle text-white d-sm-flex d-lg-none justify-content-center align-items-center offcanvas-btn border-0"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+                    <i class="ri-menu-3-fill"></i>
+                </button>
+
+                <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                    aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header justify-content-between">
+
+                        <h5 class="offcanvas-title" id="staticBackdropLabel">
+                            <div class="logo">
+                                <a href="./index.html">
+                                    <img src="./assets/Images/aplio-logo-white.svg" alt="">
+                                </a>
+                            </div>
+                        </h5>
+                        <button type="button" class="text-white btn" data-bs-dismiss="offcanvas">
+                            <i class="ri-close-large-fill"></i>
+                        </button>
+
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul class="text-white d-flex flex-column gap-3">
+                                <li class="d-flex justify-content-between parent-dropdown">
+                                    <a href="./index.html" class="text-white">Home</a>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <ul class="dropdown d-flex flex-column gap-4 px-5 z-3">
+                                        <li>Home 1</li>
+                                        <li>Home 2</li>
+                                        <li>Home 3</li>
+                                        <li>Home 4</li>
+                                        <li>Home 5</li>
+                                        <li>Home 6</li>
+                                        <li>Home 7</li>
+                                        <li>Home 8</li>
+                                    </ul>
+                                </li>
+                                <li>About</li>
+                                <li class="d-flex justify-content-between parent-dropdown">
+                                    <span>Services</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <ul class="dropdown d-flex flex-column gap-4 px-5 z-3">
+                                        <li>Services</li>
+                                        <li>Service Single</li>
+                                    </ul>
+                                </li>
+                                <li>Pages</li>
+                                <li class="d-flex justify-content-between parent-dropdown news">
+                                    <span>News</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <ul class="dropdown d-flex flex-column gap-4 px-5 z-3">
+                                        <li>Blog Grid</li>
+                                        <li>Blog List</li>
+                                        <li>Blog Categories</li>
+                                        <li>Blog Tags</li>
+                                        <li>Blog Details</li>
+                                    </ul>
+                                </li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                        <button
+                            class="demo-btn text-white ms-4 px-4 py-2 border-0 rounded-5 d-sm-flex d-lg-none">Request
+                            Demo</button>
+                    </div>
+                </div>
+                <!-- OffCanvas -->
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero py-100 position-relative">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="hero-left d-flex flex-column gap-5 py-100">
+                            <span class="hreo-sub-title text-white text-uppercase">50k+ Trusted Business</span>
+                            <div>
+                                <div class="d-flex gap-2">
+                                    <h1 class="hero-title text-white fw-bold">Make your</h1>
+                                    <h2 class="hero-title text-white fw-bold h1 rounded-5">
+                                        <em class="rounded-pill">Finance</em>
+                                    </h2>
+                                </div>
+                                <h2 class="hero-title text-white fw-bold h1">more efficient.</h2>
+                            </div>
+                            <p class="text-white fw-medium ">
+                                Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text.
+                                It's not Latin, though it looks like it
+                            </p>
+                            <form action="" class="active rounded-5 overflow-hidden justify-content-between d-flex">
+                                <input type="text" placeholder="Enter your email" class="border-0">
+                                <button class="cta-btn border-0 text-black rounded-5 py-3 px-5">Get Started</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="hero-right position-relative">
+                            <div class="bg-hero-circle-box position-relative">
+                                <img src="./assets/Images/bg-hero-circle-dark.png" alt="" class="position-absolute">
+                            </div>
+                            <div class="hero-stats position-relative">
+                                <div class="policy position-relative">
+                                    <img src="./assets/Images/hero-policy.png" alt="" class="position-absolute">
+                                </div>
+                                <div class="chart position-relative">
+                                    <img src="./assets/Images/hero-chart.png" alt="" class="position-absolute">
+                                </div>
+                                <div class="hero-circle position-relative">
+                                    <img src="./assets/Images/hero-rating.png" alt="" class="position-absolute">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Hero Section -->
+
+        <!-- Sponser Section -->
+        <section class="sponser py-100">
+            <div class="container">
+                <div class="sponser-content d-flex flex-column align-items-center">
+                    <h2 class="text-white text-center">The world's best companies trust aplio.</h2>
+                    <p class="sponser-sub-title text-white text-center">Trusted by thousands of companies across 50+
+                        countries</p>
+                    <!-- Marquee Animtion -->
+
+                    <!-- Marquee Animtion -->
+                    <div class="my-3">
+                        <button class="btn-1 border-0 text-white rounded-5 py-2 px-4">Start your Journey</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sponser Section -->
+
+        <!-- Services Section -->
+        <section class="services py-200">
+            <div class="container">
+                <h2 class="text-white text-uppercase fw-medium fs-6 mb-3">our services</h2>
+                <div class="d-flex gap-5">
+                    <h2 class="text-white fw-semibold fs-1 lh-1">The world's best companies
+                        trust aplio.
+                    </h2>
+                    <p class="text-white fw-normal">Until recently, the prevailing view assumed lorem ipsum was born as
+                        a nonsense text. It's not Latin, though it looks like it</p>
+                </div>
+                <div class="our-services row g-4 mt-4 position-relative">
+                    <div class="green-bg position-absolute">
+                    </div>
+                    <div class="col-lg-4 col-md-6 z-2">
+                        <div class="box p-2 rounded-4">
+                            <div class="service-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                <img src="./assets/Images/aplio-file.svg" alt="" class="img-fluid mt-3">
+                                <span class="fw-semibold">Investment Banks</span>
+                                <p class="fw-normal">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima repudiandae!
+                                    Explicabo non vero ex, tenetur quam assumenda veritatis sunt.
+                                </p>
+                                <div class="my-3">
+                                    <button class="btn-1 border-0 text-white rounded-5 py-2 px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 z-2">
+                        <div class="box p-2 rounded-4">
+                            <div class="service-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                <img src="./assets/Images/aplio-sales.svg" alt="" class="img-fluid mt-3">
+                                <span class="fw-semibold">Sales & Trading</span>
+                                <p class="fw-normal">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima repudiandae!
+                                    Explicabo non vero ex, tenetur quam assumenda veritatis sunt.
+                                </p>
+                                <div class="my-3">
+                                    <button class="btn-1 border-0 text-white rounded-5 py-2 px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 z-2">
+                        <div class="box p-2 rounded-4">
+                            <div class="service-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                <img src="./assets/Images/aplio-loan.svg" alt="" class="img-fluid mt-3">
+                                <span class="fw-semibold">Mortgage Loans</span>
+                                <p class="fw-normal">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima repudiandae!
+                                    Explicabo non vero ex, tenetur quam assumenda veritatis sunt.
+                                </p>
+                                <div class="my-3">
+                                    <button class="btn-1 border-0 text-white rounded-5 py-2 px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 z-2">
+                        <div class="box p-2 rounded-4">
+                            <div class="service-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                <img src="./assets/Images/aplio-finance.svg" alt="" class="img-fluid mt-3">
+                                <span class="fw-semibold">Finance Analysis</span>
+                                <p class="fw-normal">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima repudiandae!
+                                    Explicabo non vero ex, tenetur quam assumenda veritatis sunt.
+                                </p>
+                                <div class="my-3">
+                                    <button class="btn-1 border-0 text-white rounded-5 py-2 px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 z-2">
+                        <div class="box p-2 rounded-4">
+                            <div class="service-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                <img src="./assets/Images/aplio-effeciency.svg" alt="" class="img-fluid mt-3">
+                                <span class="fw-semibold">Increased Efficiency</span>
+                                <p class="fw-normal">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima repudiandae!
+                                    Explicabo non vero ex, tenetur quam assumenda veritatis sunt.
+                                </p>
+                                <div class="my-3">
+                                    <button class="btn-1 border-0 text-white rounded-5 py-2 px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 z-2">
+                        <div class="box p-2 rounded-4">
+                            <div class="service-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                <img src="./assets/Images/aplio-fund.svg" alt="" class="img-fluid mt-3">
+                                <span class="fw-semibold">Fundraising Advice</span>
+                                <p class="fw-normal">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima repudiandae!
+                                    Explicabo non vero ex, tenetur quam assumenda veritatis sunt.
+                                </p>
+                                <div class="my-3">
+                                    <button class="btn-1 border-0 text-white rounded-5 py-2 px-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+
+        <!-- Work Section -->
+        <section class="work position-relative">
+            <div class="container d-flex justify-content-center position-relative">
+                <div class="box-2 d-flex justify-content-center p-5 position-absolute rounded-4">
+                    <div class="porjects d-flex flex-column align-items-center">
+                        <h2 class="text-white fs-1">60%</h2>
+                        <span class="text-white">Project Completed</span>
+                    </div>
+                    <div class="team d-flex flex-column align-items-center">
+                        <h2 class="text-white fs-1">30+</h2>
+                        <span class="text-white">Team Members</span>
+                    </div>
+                    <div class="clients d-flex flex-column align-items-center">
+                        <h2 class="text-white fs-1">258+</h2>
+                        <span class="text-white">Satisfied Clients</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Work Section -->
+
+        <!-- Integration Section -->
+        <section class="integration py-100">
+            <div class="container py-100">
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="left d-flex flex-column gap-3">
+                            <h2 class="text-white text-uppercase fw-medium fs-6 mb-3">Data integrations</h2>
+                            <h2 class="text-white fw-semibold fs-1 lh-1">A strong vision is crucial for the analysis of
+                                wealth.
+                            </h2>
+                            <p class="text-white fw-normal">Until recently, the prevailing view assumed lorem ipsum was
+                                born as a nonsense text. It's not Latin, though it looks like it</p>
+
+                            <ul class="d-flex flex-column gap-3 ps-0">
+                                <li class="d-flex align-items-center gap-2">
+                                    <div
+                                        class="icon-circle rounded-circle d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <span class="text-white fw-normal fs-6">Guided Payment Procurement</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <div
+                                        class="icon-circle rounded-circle d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <span class="text-white fw-normal fs-6">Streamlined Purchase Process</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <div
+                                        class="icon-circle rounded-circle d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <span class="text-white fw-normal fs-6">Automated Invoice Management</span>
+                                </li>
+                            </ul>
+                            <div class="my-3">
+                                <button
+                                    class="btn-2 border-0 text-black text-capitalize rounded-5 py-2 px-4 fw-normal">Start
+                                    your Journey</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right position-relative">
+                            <div class="transaction position-relative d-flex z-2">
+                                <img src="./assets/Images/aplio-transaction.png" alt="" class="position-absolute">
+                            </div>
+                            <div class="team position-relative">
+                                <img src="./assets/Images/aplio-team.png" alt="" class="position-absolute">
+                            </div>
+                            <div class="support position-relative">
+                                <img src="./assets/Images/aplio-support.png" alt="" class="position-absolute">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Integration Section -->
+
+        <!-- Solution Section -->
+        <section class="solution py-100">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12 p-5">
+                        <div class="right d-flex flex-column gap-3">
+                            <h2 class="text-white text-uppercase fw-medium fs-6 mb-0">Strong Solutions</h2>
+                            <h2 class="text-white fw-semibold fs-1 lh-1">Ensure strong solutions are available at all
+                                times.
+                            </h2>
+                            <p class="text-white fw-normal">Until recently, the prevailing view assumed lorem ipsum was
+                                born as a nonsense text. It's not Latin, though it looks like it</p>
+
+                            <ul class="d-flex gap-3 ps-0 mt-3">
+                                <li class="d-flex align-items-center gap-2">
+                                    <div
+                                        class="icon-circle rounded-circle d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <span class="text-white fw-normal fs-6">On Demand Support</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <div
+                                        class="icon-circle rounded-circle d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <span class="text-white fw-normal fs-6">Information Sharing</span>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <div
+                                        class="icon-circle rounded-circle d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <span class="text-white fw-normal fs-6">Cloud Technology</span>
+                                </li>
+                            </ul>
+                            <div class="my-3">
+                                <button
+                                    class="btn-1 border-0 text-white text-capitalize rounded-5 py-2 px-4 fw-normal">Start
+                                    your Journey</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="left position-relative">
+
+                            <div class="revenue position-relative">
+                                <img src="./assets/Images/aplio-revenue.png" alt="" class="position-absolute z-3 w-50">
+                            </div>
+
+                            <div class="bg-hero-circle-box position-relative">
+                                <img src="./assets/Images/bg-solution-circle.png" alt="" class="position-absolute">
+                            </div>
+
+                            <div class="summary position-relative">
+                                <img src="./assets/Images/aplio-summary.png" alt="" class="position-absolute z-2">
+                            </div>
+
+                            <div class="payment position-relative">
+                                <img src="./assets/Images/aplio-payment.png" alt="" class="position-absolute z-2">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Solution Section -->
+
+        <!-- Faq Section -->
+        <section class="faq py-100">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="left d-flex flex-column gap-4">
+                            <h2 class="text-white text-uppercase fw-medium fs-6 mb-0">FAQ's</h2>
+                            <h2 class="text-white fw-semibold fs-1 lh-1">Frequently Asked
+                                Question
+                            </h2>
+                            <p class="text-white fw-normal">Neque accumsan dolor nullam commodo. Odio massa nisi ullamcorper suspendisse amet amet. Aenean suspendisse eget est pulvinar. Fames eget eget nascetur ornare
+                            </p>           
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right">
+                            <div class="faq-accordian"> 
+                                <!-- Accordion Starts-->
+                                <div class="acc">
+                                    <h3>Q. What is a business agency?</h3>
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <p class="ans-5">Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordian -->
+                                <div class="acc">
+                                    <h3>Q. What services does a business agency provide?</h3>
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <p class="ans-5">Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordian -->
+                                <div class="acc">
+                                    <h3>Q. How often should I update my website?</h3>
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <p class="ans-5">Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordian -->
+                                <div class="acc">
+                                    <h3>Q. How do subscriptions work?</h3>
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <p class="ans-5">Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Accordian -->
+                                <div class="acc">
+                                    <h3 class="text-white fw-semibold">Q. What other services are you compatible with?</h3>
+                                    <div class="content">
+                                        <div class="content-inner">
+                                            <p class="ans-5">Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion Ends-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Faq Section -->
+
+        <!-- Testimonail Section -->
+        <section class="testimonial py-100">
+            <div class="container">
+                <div class="testimonial-top d-flex flex-column gap-3">
+                    <h2 class="text-white text-center text-uppercase fw-medium fs-6 mb-0">Testimonails</h2>
+                    <h2 class="text-white text-center fw-semibold fs-1">What our customer’s say about <br> our company
+                    </h2>
+                    <div class="row justify-content-center g-5 position-relative mt-3">
+                        <div class="green-bg-2 position-absolute">
+                        </div>
+                        <div class="col-lg-4 z-2">
+                            <div class="box-3 p-2 rounded-4">
+                                <div class="test-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                    <img src="./assets/Images/aplio-testi-1.svg" alt="" class="img-fluid mt-3 w-50">
+                                    <p class="fw-normal mb-0">
+                                        <em>"Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.”</em>
+                                    </p>
+                                    <div class="rating">
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-line"></i>
+                                    </div>
+                                    <div class="test-inner-border"></div>
+                                    <div class="client d-flex align-items-center gap-3">
+                                        <div class="client-img-box">
+                                            <img src="./assets/Images/aplio-avatar1.png" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="abt-client d-flex flex-column justify-content-center">
+                                            <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">Robert Frost</h2>
+                                            <p class="ans-5 p-0 mb-0">Lead Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 z-2">
+                            <div class="box-3 p-2 rounded-4">
+                                <div class="test-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                    <img src="./assets/Images/aplio-testi-3.svg" alt="" class="img-fluid mt-3 w-50">
+                                    <p class="fw-normal mb-0">
+                                        <em>"Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.”</em>
+                                    </p>
+                                    <div class="rating">
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                    </div>
+                                    <div class="test-inner-border"></div>
+                                    <div class="client d-flex align-items-center gap-3">
+                                        <div class="client-img-box">
+                                            <img src="./assets/Images/aplio-avatar3.png" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="abt-client d-flex flex-column justify-content-center">
+                                            <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">Cody Fisher</h2>
+                                            <p class="ans-5 p-0 mb-0">UI Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 z-2">
+                            <div class="box-3 p-2 rounded-4">
+                                <div class="test-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                    <img src="./assets/Images/aplio-testi-2.svg" alt="" class="img-fluid mt-2 w-50">
+                                    <p class="fw-normal mb-0">
+                                        <em>"Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.”</em>
+                                    </p>
+                                    <div class="rating">
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                    <div class="test-inner-border"></div>
+                                    <div class="client d-flex align-items-center gap-3">
+                                        <div class="client-img-box">
+                                            <img src="./assets/Images/aplio-avatar2.png" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="abt-client d-flex flex-column justify-content-center">
+                                            <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">Guy Hawkins</h2>
+                                            <p class="ans-5 p-0 mb-0">Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 z-2">
+                            <div class="box-3 p-2 rounded-4">
+                                <div class="test-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                    <img src="./assets/Images/aplio-testi-4.svg" alt="" class="img-fluid mt-3 w-75">
+                                    <p class="fw-normal mb-0">
+                                        <em>"Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.”</em>
+                                    </p>
+                                    <div class="rating">
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-line"></i>
+                                    </div>
+                                    <div class="test-inner-border"></div>
+                                    <div class="client d-flex align-items-center gap-3">
+                                        <div class="client-img-box">
+                                            <img src="./assets/Images/aplio-avatar4.png" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="abt-client d-flex flex-column justify-content-center">
+                                            <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">Albert Flores</h2>
+                                            <p class="ans-5 p-0 mb-0">Junior Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 z-2">
+                            <div class="box-3 p-2 rounded-4">
+                                <div class="test-box rounded-4 px-4 text-white d-flex flex-column gap-4">
+                                    <img src="./assets/Images/aplio-testi-5.svg" alt="" class="img-fluid mt-3 w-45">
+                                    <p class="fw-normal mb-0">
+                                        <em>"Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like it, and it actually says nothing.”</em>
+                                    </p>
+                                    <div class="rating">
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-fill"></i>
+                                        <i class="ri-star-s-line"></i>
+                                    </div>
+                                    <div class="test-inner-border"></div>
+                                    <div class="client d-flex align-items-center gap-3">
+                                        <div class="client-img-box">
+                                            <img src="./assets/Images/aplio-avatar5.png" alt="" class="rounded-circle">
+                                        </div>
+                                        <div class="abt-client d-flex flex-column justify-content-center">
+                                            <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">Floyed Miles</h2>
+                                            <p class="ans-5 p-0 mb-0">UX Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5 text-center">
+                        <button
+                            class="btn-2 border-0 text-black text-capitalize rounded-5 py-2 px-4 fw-normal">Start
+                            your Journey</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonail Section -->
+
+        <!-- Blogs Section -->
+        <section class="blogs py-100">
+            <div class="container">
+                <div class="d-flex flex-column gap-3">
+                    <h2 class="text-white text-center text-uppercase fw-medium fs-6 mb-0 z-3    ">Financial blog tips and tricks</h2>
+                    <h2 class="text-white text-center fw-semibold fs-1 z-3">Our recent news & insights
+                    </h2>
+                </div>
+                <div class="row justify-content-center g-5 position-relative mt-3 py-5">
+                    <div class="green-bg-3 position-absolute">
+                    </div>
+                    <div class="col-lg-4 z-2">
+                        <div class="box-4 p-2 rounded-4">
+                            <div class="test-box rounded-4 px-4 text-white d-flex flex-column gap-3">
+                                <img src="./assets/Images/aplio-blog1.png" alt="" class="img-fluid mt-3 w-100">
+                                <div class="btn-3-box mt-3 mb-0">
+                                    <button class="btn-3 border-0 rounded-5 py-2 px-4">Marketing</button>
+                                </div>
+                                <h3 class="blog-title mb-0 p-0 fw-semibold">A digital prescription for the banking industry</h3>
+                                <div class="bloger d-flex align-items-center gap-3">
+                                    <div class="abt-client d-flex justify-content-center gap-2 align-items-center">
+                                        <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">Natalia Port</h2>
+                                        <i class="ri-git-commit-line"></i>
+                                        <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">March 20, 2025</h2>
+                                    </div>
+                                </div>
+                                <p class="fw-normal">
+                                    Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 z-2">
+                        <div class="box-4 p-2 rounded-4">
+                            <div class="test-box rounded-4 px-4 text-white d-flex flex-column gap-3">
+                                <img src="./assets/Images/aplio-blog2.png" alt="" class="img-fluid mt-3 w-100">
+                                <div class="btn-3-box mt-3 mb-0">
+                                    <button class="btn-3 border-0 rounded-5 py-2 px-4">Banking</button>
+                                </div>
+                                <h3 class="blog-title mb-0 p-0 fw-semibold">Manage your online banking & get rewarded</h3>
+                                <div class="bloger d-flex align-items-center gap-3">
+                                    <div class="abt-client d-flex justify-content-center gap-2 align-items-center">
+                                        <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">Justin Langard</h2>
+                                        <i class="ri-git-commit-line"></i>
+                                        <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">April 20, 2025</h2>
+                                    </div>
+                                </div>
+                                <p class="fw-normal">
+                                    Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 z-2">
+                        <div class="box-4 p-2 rounded-4">
+                            <div class="test-box rounded-4 px-4 text-white d-flex flex-column gap-3">
+                                <img src="./assets/Images/aplio-blog3.png" alt="" class="img-fluid mt-3 w-100">
+                                <div class="btn-3-box mt-3 mb-0">
+                                    <button class="btn-3 border-0 rounded-5 py-2 px-4">Payment</button>
+                                </div>
+                                <h3 class="blog-title mb-0 p-0 fw-semibold">We,ve been perfecting the art of running</h3>
+                                <div class="bloger d-flex align-items-center gap-3">
+                                    <div class="abt-client d-flex justify-content-center gap-2 align-items-center">
+                                        <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">Kristin Watson</h2>
+                                        <i class="ri-git-commit-line"></i>
+                                        <h2 class="text-white text-center text-capitalize fw-medium fs-6 mb-0">April 17, 2025</h2>
+                                    </div>
+                                </div>
+                                <p class="fw-normal">
+                                    Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blogs Section -->
+
+    </main>
+
+    <footer></footer>
+
+    <script src="./assets/Js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.acc h3').click(function () {
+                $(this).next('.content').slideToggle();
+                $(this).parent().toggleClass('active');
+                $(this).parent().siblings().children('.content').slideUp();
+                $(this).parent().siblings().removeClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
