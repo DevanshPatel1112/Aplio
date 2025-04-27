@@ -73,6 +73,13 @@ nav ul li{
     background-color: var(--nav-bg);
     height: 40px;
     width:  40px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0, -1.57, 1, 3.06);
+}
+
+.search:hover{
+    background-color: var(--color-green-hover);
+    color: var(--primary-bg-1) !important;
 }
 
 .search-btn{
@@ -81,6 +88,13 @@ nav ul li{
 
 .demo-btn{
     background-color: var(--nav-bg);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.demo-btn:hover{
+    background-color: var(--color-green-hover);
+    color: var(--primary-bg-1) !important;
 }
 
 .parent-dropdown{
@@ -164,6 +178,11 @@ nav ul li{
 }
 .cta-btn{
     background-color: var(--color-green);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.cta-btn:hover{
+    background-color: var(--color-green-hover);
 }
 .bg-hero-circle-box img{
     top:  165px;
