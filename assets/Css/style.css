@@ -369,6 +369,7 @@ nav ul li{
 
 .content-inner {
     padding: 15px;
+    background-color: var(--nav-bg);
 }
 
 .content * {
