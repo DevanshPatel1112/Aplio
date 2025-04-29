@@ -16,10 +16,46 @@
         {
             padding: 0px 12px;
     }
-    
+    .bg-hero-circle-box img {
+        top: 165px;
+        left: 0px !important;
+    }
+    .revenue img {
+        right: 0;
+        top: 88px;
+        width: 65% !important;
+    }
+    .box-2{
+        gap: 30px;
+        max-width: 320px;
+    }
+    .hero-title {
+        font-size: 55px !important;
+    }
+    .box:hover {
+        transform: scale(0.9);
+    }
+    .box-4 {
+        transform: scale(0.9);
+    }
+    .box-4:hover {
+        transform: scale(0.7);
+    }
 }
 
 @media (min-width:576px) {
+    .hero-title {
+        font-size: 64px !important;
+    }
+    .revenue img {
+        right: 0;
+        top: 0;
+        width: 50% !important;
+    }
+    .bg-hero-circle-box img {
+        top: 165px;
+        left: 200px;
+    }
     .hero{
         padding-bottom: 600px !important;
     }
@@ -38,10 +74,23 @@
         right: -15px;
     }
     .solution{
-        padding-bottom: 600px;
+        padding-bottom: 150px;
     }
     .acc h3{
         font-size: 1rem;
+    }
+    .box-2{
+        gap: 115px;
+        max-width: 1500px;
+    }
+    .box:hover {
+        transform: scale(1.1);
+    }
+    .box-4 {
+        transform: scale(0.9);
+    }
+    .box-4:hover {
+        transform: scale(1);
     }
 }
 
@@ -58,6 +107,9 @@
     }
     .acc h3{
         font-size: 1.25rem;
+    }
+    .solution{
+        padding-bottom: 200px;
     }
 }
 
@@ -96,6 +148,12 @@
     }
     .solution{
         padding-bottom: 100px;
+    }
+    .box-4 {
+        transform: scale(1);
+    }
+    .box-4:hover {
+        transform: scale(1.1);
     }
 }
 
